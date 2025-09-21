@@ -31,6 +31,10 @@ a {
   text-decoration: none;
 }
 
+.img {
+  display: block;
+}
+
 /* common */
 
 .container {
@@ -194,7 +198,7 @@ a {
   overflow: hidden;
 }
 
-.advantages-container {
+.advantages {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -262,10 +266,6 @@ a {
   text-align: left;
   padding-left: 16px;
 }
-
-/* .portfolio li {
-  border-bottom: 1px solid #e7e9fc;
-} */
 
 .portfolio p {
   text-align: left;
