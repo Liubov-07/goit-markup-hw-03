@@ -4,17 +4,71 @@ body {
   background-color: #fff;
 }
 
+/* reset */
+
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 a {
   text-decoration: none;
 }
 
-button {
-  cursor: pointer;
+/* common */
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+/* header */
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.contact-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .logo {
@@ -27,15 +81,18 @@ button {
   text-transform: uppercase;
 }
 
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
+
 .header-logo .logo-part {
   color: #2e2f42;
 }
 
-.footer-logo .logo-part {
-  color: #f4f4fd;
-}
-
 .nav-link {
+  padding: 24px 0;
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -50,9 +107,12 @@ button {
 
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
 
 .contacts-link {
+  display: block;
+  padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -64,10 +124,18 @@ button {
   color: #404bbf;
 }
 
-/* --------------MAIN section hero ------------------- */
+/* SECTIONS common */
+
+/* SECTION HERO */
 
 .hero {
   background-color: #2e2f42;
+  padding: 188px 0;
+}
+
+.container-team {
+  padding: 124px 0;
+  padding-bottom: 116px;
 }
 
 .hero-title {
@@ -77,6 +145,10 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
 }
 
 .hero-button {
@@ -86,6 +158,12 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 169px;
+  border-radius: 4px;
+  justify-content: center;
+  display: flex;
 }
 
 .hero-button:hover,
@@ -93,7 +171,7 @@ button {
   background: #404bbf;
 }
 
-/* ---------SECTIONS general-------------*/
+/* SECTION TWO ADVANTAGES */
 
 .head-two {
   font-weight: 700;
@@ -105,23 +183,109 @@ button {
   color: #2e2f42;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advantages-container {
+  padding: 120px 0;
+}
+
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+
+.advantages-item {
+  width: calc((100% - 72px) / 4);
+}
+
+/* SECTION THREE TEAM */
+
 .head-three {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 32px 0;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+/* SECTION FOUR PORTFOLIO*/
+.portfolio {
+  padding: 124px 0 120px;
+}
+
+.portfolio h3 {
+  text-align: left;
+  padding-left: 16px;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+}
+
+.portfolio li {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.portfolio p {
+  text-align: left;
+  padding-left: 16px;
+  padding-bottom: 32p;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+}
+
+.container-portfolio {
+}
+
+.portfolio-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding-top: 72px;
+  text-align: left;
+}
+
+/* FOOTER */
+
+.footer-container {
+}
+
+.footer-logo .logo-part {
+  color: #f4f4fd;
 }
 
 .page-footer {
   background-color: #2e2f42;
+  padding: 100px 0;
+  padding-bottom: 100px;
 }
+
+.page-footer p {
+  padding-top: 16px;
+  height: 72px;
+  width: 264px;
+}
+
 .paragraf {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  text-align: center;
+  padding-bottom: 32px;
 }
 
 .footer-paragraf {
@@ -137,9 +301,12 @@ button {
 }
 
 .team-list {
-  background-color: #ffffff;
+  display: flex;
+  gap: 24px;
+  padding-top: 72px;
 }
 
 .list-item {
   background-color: #ffffff;
+  height: 380px;
 }
